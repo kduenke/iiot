@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IIoT.CSharp.AssetProcessor", "src\IIoT.CSharp.AssetProcessor\IIoT.CSharp.AssetProcessor.csproj", "{A73511FC-D714-424A-9399-5C18EB002448}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CA3EBE5A-9523-4382-91C5-FB6975AAC14A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{996C3482-6AA1-4A96-9D46-945368C1A89F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IIoT.CSharp.AssetProcessor.Tests", "tests\IIoT.CSharp.AssetProcessor.Tests\IIoT.CSharp.AssetProcessor.Tests.csproj", "{7A8922CB-3134-47B9-A660-3080F268A246}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2324E441-3586-4034-8252-82691127B20C}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A73511FC-D714-424A-9399-5C18EB002448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73511FC-D714-424A-9399-5C18EB002448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73511FC-D714-424A-9399-5C18EB002448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73511FC-D714-424A-9399-5C18EB002448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A8922CB-3134-47B9-A660-3080F268A246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A8922CB-3134-47B9-A660-3080F268A246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A8922CB-3134-47B9-A660-3080F268A246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A8922CB-3134-47B9-A660-3080F268A246}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A73511FC-D714-424A-9399-5C18EB002448} = {CA3EBE5A-9523-4382-91C5-FB6975AAC14A}
+		{7A8922CB-3134-47B9-A660-3080F268A246} = {996C3482-6AA1-4A96-9D46-945368C1A89F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D42E2379-CA01-4723-8BE7-F66CC004C1EA}
+	EndGlobalSection
+EndGlobal
