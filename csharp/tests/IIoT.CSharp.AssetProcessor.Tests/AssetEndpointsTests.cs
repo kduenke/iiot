@@ -7,26 +7,14 @@ public class AssetEndpointsTests
 {
     [Theory]
     [MemberData(nameof(AssetEndpointsTestsData.Assets), MemberType = typeof(AssetEndpointsTestsData))]
-    public async Task PostAsync_Ok(Asset asset)
+    public async Task PostAsync_Ok(string json)
     {
         // Arrange
-        //var json = @"{
-        //    ""timestamp"": ""2024-01-12T20:30:45.4483418Z"",
-        //    ""messageType"": ""ua-deltaframe"",
-        //    ""payload"": {
-        //        ""temperature"": {
-        //            ""SourceTimestamp"": ""2024-01-12T20:30:45.069698Z"",
-        //            ""Value"": 14914
-        //        },
-        //        ""Tag 10"": {
-        //            ""SourceTimestamp"": ""2024-01-12T20:30:45.0697192Z"",
-        //            ""Value"": 14914
-        //        }
-        //    },
-        //    ""dataSetWriterName"": ""thermostat"",
-        //    ""sequenceNumber"": 14834
-        //}";
-        //var asset = JsonSerializer.Deserialize<Asset>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+        var jsonSerializerOptions = new JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        var asset = JsonSerializer.Deserialize<Asset>(json, jsonSerializerOptions);
 
         // Act
         var result = await AssetEndpoints.PostAsync(asset).ConfigureAwait(false);
