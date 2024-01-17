@@ -1,0 +1,6 @@
+@IIoT.AssetProcessor_HostAddress = http://localhost:5271
+
+GET {{IIoT.AssetProcessor_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
